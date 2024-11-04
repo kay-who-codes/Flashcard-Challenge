@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashcard App</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+    .card { display: none; border: 1px solid #ddd; padding: 20px; margin: 20px; }
+    .card.visible { display: block; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <h1>Flashcard App</h1>
+  <div id="main-menu">
+    <button onclick="showCreateForm()">Create Flashcard</button>
+    <button onclick="startLearning()">Learn</button>
+  </div>
+
+  <div id="create-form" class="hidden">
+    <h2>Create a Flashcard</h2>
+    <label>Category: <input type="text" id="category" /></label><br />
+    <label>Front Text: <input type="text" id="front-text" /></label><br />
+    <label>Back Text: <input type="text" id="back-text" /></label><br />
+    <button onclick="addFlashcard()">Add Flashcard</button>
+    <button onclick="showMainMenu()">Back to Menu</button>
+  </div>
+
+  <div id="learn-mode" class="hidden">
+    <h2 id="current-category"></h2>
+    <div id="flashcard-container"></div>
+    <button onclick="markLearned()">Learned</button>
+    <button onclick="keepLearning()">Keep Learning</button>
+    <button onclick="showMainMenu()">End Session</button>
+  </div>
+
+  <script>
+    // Pre-existing flashcards in a category named "Words"
+    const preloadedFlashcards = {
+      "Words": [
+        { front: "Hello", back: "A greeting" },
+        { front: "Cat", back: "A small domesticated animal" },
+        { front: "Ocean", back: "A vast body of salt water" },
+        { front: "Mountain", back: "A large landform that rises prominently" }
+      ]
+    };
+
+    let flashcards = { ...preloadedFlashcards };
+    let currentCategory = '';
+    let currentCardIndex = 0;
+
+    function showCreateForm() {
+      document.getElementById('main-menu').classList.add('hidden');
+      document.getElementById('create-form').classList.remove('hidden');
+    }
+
+    function addFlashcard() {
+      const category = document.getElementById('category').value.trim();
+      const frontText = document.getElementById('front-text').value.trim();
+      const backText = document.getElementById('back-text').value.trim();
+
+      if (!category || !frontText || !backText) return alert('All fields are required.');
+
+      flashcards[category] = flashcards[category] || [];
+      flashcards[category].push({ front: frontText, back: backText });
+
+      document.getElementById('category').value = '';
+      document.getElementById('front-text').value = '';
+      document.getElementById('back-text').value = '';
+      alert('Flashcard added!');
+    }
+
+    function showMainMenu() {
+      document.getElementById('main-menu').classList.remove('hidden');
+      document.getElementById('create-form').classList.add('hidden');
+      document.getElementById('learn-mode').classList.add('hidden');
+    }
+
+    function startLearning() {
+      const categories = Object.keys(flashcards);
+      if (categories.length === 0) return alert('No flashcards to learn.');
+
+      currentCategory = prompt(`Choose a category: ${categories.join(', ')}`);
+      if (!currentCategory || !flashcards[currentCategory]) return;
+
+      document.getElementById('main-menu').classList.add('hidden');
+      document.getElementById('learn-mode').classList.remove('hidden');
+      document.getElementById('current-category').textContent = `Category: ${currentCategory}`;
+
+      currentCardIndex = 0;
+      shuffleDeck(flashcards[currentCategory]);  // Shuffle cards initially
+      showCard();
+    }
+
+    function showCard() {
+      const card = flashcards[currentCategory][currentCardIndex];
+      document.getElementById('flashcard-container').innerHTML = `
+        <div class="card visible">
+          <div>${card.front}</div>
+          <button onclick="toggleCard()">Reveal</button>
+        </div>
+      `;
+    }
+
+    function toggleCard() {
+      const card = flashcards[currentCategory][currentCardIndex];
+      const container = document.getElementById('flashcard-container');
+
+      if (container.innerHTML.includes(card.front)) {
+        container.innerHTML = `<div class="card visible"><div>${card.back}</div></div>`;
+      } else {
+        showCard();
+      }
+    }
+
+    function markLearned() {
+      flashcards[currentCategory].splice(currentCardIndex, 1);
+
+      if (flashcards[currentCategory].length === 0) {
+        alert('All cards learned in this category!');
+        showMainMenu();
+      } else {
+        currentCardIndex = currentCardIndex % flashcards[currentCategory].length;
+        showCard();
+      }
+    }
+
+    function keepLearning() {
+      // Shuffle the current card back into the deck
+      currentCardIndex = Math.floor(Math.random() * flashcards[currentCategory].length);
+      showCard();
+    }
+
+    function shuffleDeck(deck) {
+      for (let i = deck.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [deck[i], deck[j]] = [deck[j], deck[i]];
+      }
+    }
+  </script>
+</body>
+</html>
