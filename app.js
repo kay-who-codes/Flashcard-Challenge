@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Load flashcards for a specific category
   async function loadCategory(category) {
     try {
-      const response = await fetch(`flashcards/${category}.json`);
+      const response = await fetch(`Flashcards/${category}.json`);
       if (!response.ok) throw new Error(`Failed to load ${category}.json`);
       const data = await response.json();
       flashcards[category] = data;
