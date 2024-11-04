@@ -3,33 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flashcards</title>
+  <title>Flashcard App</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Flashcards</h1>
+  <h1>Flashcard App</h1>
 
   <!-- Main Menu -->
   <div id="main-menu">
-    <button onclick="showCreateForm()">Create Flashcard</button>
-    <button onclick="loadCategories()">Learn</button>
+    <button id="create-btn">Create Flashcard</button>
+    <button id="learn-btn">Learn</button>
   </div>
 
   <!-- Category Selection Screen -->
   <div id="category-selection" class="hidden">
     <h2>Select a Category</h2>
     <div id="category-buttons"></div>
-    <button onclick="showMainMenu()">Back to Menu</button>
+    <button id="back-to-menu">Back to Menu</button>
   </div>
 
   <!-- Learning Mode Screen -->
   <div id="learn-mode" class="hidden">
-    <h2 id="current-category"></h2>
+    <h2 id="current-category">Category</h2>
     <div id="flashcard-container"></div>
-    <button onclick="markLearned()">Learned</button>
-    <button onclick="keepLearning()">Keep Learning</button>
-    <button onclick="showMainMenu()">End Session</button>
+    <button id="learned-btn">Learned</button>
+    <button id="keep-learning-btn">Keep Learning</button>
+    <button id="end-session-btn">End Session</button>
   </div>
+
+  <div id="error-log" class="hidden"></div>
 
   <script type="module" src="app.js"></script>
 </body>
