@@ -1,5 +1,5 @@
 // Initialize the flashcard app
-const flashcards = {};
+let flashcards = {};
 let currentCategory = '';
 let currentDeck = [];
 let currentCardIndex = 0;
@@ -12,14 +12,23 @@ const learnMode = document.getElementById('learn-mode');
 const flashcardContainer = document.getElementById('flashcard-container');
 const categoryButtonsContainer = document.getElementById('category-buttons');
 
-// Load categories from JSON files in the flashcards directory
+// Show the create form (dummy function for now)
+function showCreateForm() {
+  alert("Create Flashcard functionality is not implemented yet.");
+}
+
+// Load categories and show them as clickable buttons
 async function loadCategories() {
-  categoryButtonsContainer.innerHTML = '';
   mainMenu.classList.add('hidden');
   categorySelection.classList.remove('hidden');
 
-  const categories = ['words', 'phrases'];  // Add more categories here as needed
+  // Clear existing buttons
+  categoryButtonsContainer.innerHTML = '';
 
+  // List of categories (add more categories here as needed)
+  const categories = ['words', 'phrases'];
+
+  // Create buttons for each category
   for (const category of categories) {
     const button = document.createElement('button');
     button.textContent = category.charAt(0).toUpperCase() + category.slice(1);
