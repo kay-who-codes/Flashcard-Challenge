@@ -8,8 +8,7 @@ body {
   display: none;
 }
 
-#flashcard-container {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin: 20px;
+#error-log {
+  color: red;
+  margin-top: 20px;
 }
