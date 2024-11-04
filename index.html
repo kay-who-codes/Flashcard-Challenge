@@ -9,17 +9,20 @@
 <body>
   <h1>Flashcard App</h1>
 
+  <!-- Main Menu -->
   <div id="main-menu">
     <button onclick="showCreateForm()">Create Flashcard</button>
     <button onclick="loadCategories()">Learn</button>
   </div>
 
+  <!-- Category Selection Screen -->
   <div id="category-selection" class="hidden">
     <h2>Select a Category</h2>
     <div id="category-buttons"></div>
     <button onclick="showMainMenu()">Back to Menu</button>
   </div>
 
+  <!-- Learning Mode Screen -->
   <div id="learn-mode" class="hidden">
     <h2 id="current-category"></h2>
     <div id="flashcard-container"></div>
