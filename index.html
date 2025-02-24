@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flashcards</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧠 Flashcards</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
-  <h1>Flashcards</h1>
+    <div id="header"></div>
+    <!-- Home Screen -->
+    <div id="homeScreen" class="screen">
+        <h1>Flashcards</h1>
+        <select id="categorySelect">
+            <option value="">Select a Category</option>
+        </select>
+        <div id="categoryInfo"></div>
+        <input type="number" id="cardCount" min="1" placeholder="Number of cards">
+        <button id="startBtn">Start Learning</button>
+    </div>
 
-  <!-- Main Menu -->
-  <div id="main-menu">
-    <button id="create-btn">Create Flashcard</button>
-    <button id="learn-btn">Learn</button>
-  </div>
+    <!-- Flashcard Screen -->
+    <div id="flashcardScreen" class="screen hidden">
+        <div class="stats">
+            <div>Card: <span id="currentCard">1</span>/<span id="totalCards">0</span></div>
+            <div>✅ <span id="learnedCount">0</span></div>
+            <div>❌ <span id="toLearnCount">0</span></div>
+            <div>⏩ <span id="skippedCount">0</span></div>
+            <div>📈 <span id="progressPercent">0</span>%</div>
+        </div>
+        
+        <div id="flashcardContainer">
+            <div id="flashcard">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+        </div>
 
-  <!-- Category Selection Screen -->
-  <div id="category-selection" class="hidden">
-    <h2>Select a Category</h2>
-    <div id="category-buttons"></div>
-    <button id="back-to-menu">Back to Menu</button>
-  </div>
+        <div class="controls">
+            <button class="Learned-btn" id="Learned-btn" data-action="learned">✅ Learned</button>
+            <button class="ToLearn-btn" id="ToLearn-btn" data-action="toLearn">❌ To Learn</button>
+            <button class="Skip-btn" id="Skip-btn" data-action="skip">⏩ Skip</button>
+        </div>
+        <button class="Home-btn" id="homeBtn1">Home</button>
+    </div>
 
-  <!-- Learning Mode Screen -->
-  <div id="learn-mode" class="hidden">
-    <h2 id="current-category">Category</h2>
-    <div id="flashcard-container"></div>
-    <button id="learned-btn">Learned</button>
-    <button id="keep-learning-btn">Keep Learning</button>
-    <button id="end-session-btn">End Session</button>
-  </div>
+    <!-- Results Screen -->
+    <div id="resultsScreen" class="screen hidden">
+        <h2>Results</h2>
+        <div id="resultsStats"></div>
+        <button class="Home-btn" id="homeBtn2">Home</button>
+    </div>
 
-  <!-- Error log for debugging -->
-  <div id="error-log" class="hidden"></div>
-
-  <!-- JavaScript -->
-  <script src="app.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/header.js"></script>
 </body>
 </html>
