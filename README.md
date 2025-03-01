@@ -1,6 +1,6 @@
 # 🃏 Flashcards
 
-An interactive flashcards application designed to help users learn and retain information efficiently through self-paced study sessions.
+A simple flashcards app designed to help users learn and retain information efficiently through self-paced study sessions.
 
 [![App Image](Non-App/App%20Image.png)](https://kay-who-codes.github.io/Flashcards)
 
