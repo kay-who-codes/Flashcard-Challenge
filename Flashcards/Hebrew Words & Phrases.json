@@ -1,0 +1,873 @@
+Below is a sample `.json` file containing a list of Ancient Hebrew words and phrases along with their English translations. This is a small example, but you can expand it by adding more entries as needed.
+
+```json
+[
+  {
+    "question": "שָׁלוֹם",
+    "answer": "Peace"
+  },
+  {
+    "question": "אֱלֹהִים",
+    "answer": "God"
+  },
+  {
+    "question": "תּוֹרָה",
+    "answer": "Law or Instruction"
+  },
+  {
+    "question": "אָדָם",
+    "answer": "Man or Human"
+  },
+  {
+    "question": "אִשָּׁה",
+    "answer": "Woman"
+  },
+  {
+    "question": "יְהוָה",
+    "answer": "The Lord (Name of God)"
+  },
+  {
+    "question": "מַיִם",
+    "answer": "Water"
+  },
+  {
+    "question": "אוֹר",
+    "answer": "Light"
+  },
+  {
+    "question": "אֶרֶץ",
+    "answer": "Earth or Land"
+  },
+  {
+    "question": "שָׁמַיִם",
+    "answer": "Heaven or Sky"
+  },
+  {
+    "question": "בְּרֵאשִׁית",
+    "answer": "In the beginning"
+  },
+  {
+    "question": "חַיִּים",
+    "answer": "Life"
+  },
+  {
+    "question": "מֶלֶךְ",
+    "answer": "King"
+  },
+  {
+    "question": "נָבִיא",
+    "answer": "Prophet"
+  },
+  {
+    "question": "צֶדֶק",
+    "answer": "Righteousness or Justice"
+  },
+  {
+    "question": "חֶסֶד",
+    "answer": "Loving-kindness or Mercy"
+  },
+  {
+    "question": "רוּחַ",
+    "answer": "Spirit or Wind"
+  },
+  {
+    "question": "קֹדֶשׁ",
+    "answer": "Holy"
+  },
+  {
+    "question": "מִשְׁפָּט",
+    "answer": "Judgment or Justice"
+  },
+  {
+    "question": "אַהֲבָה",
+    "answer": "Love"
+  },
+  {
+    "question": "בְּרִית",
+    "answer": "Covenant"
+  },
+  {
+    "question": "גּוֹי",
+    "answer": "Nation"
+  },
+  {
+    "question": "עַם",
+    "answer": "People"
+  },
+  {
+    "question": "מִדְבָּר",
+    "answer": "Wilderness"
+  },
+  {
+    "question": "יְרוּשָׁלַיִם",
+    "answer": "Jerusalem"
+  },
+  {
+    "question": "מִזְבֵּחַ",
+    "answer": "Altar"
+  },
+  {
+    "question": "תְּפִלָּה",
+    "answer": "Prayer"
+  },
+  {
+    "question": "חָכְמָה",
+    "answer": "Wisdom"
+  },
+  {
+    "question": "דָּבָר",
+    "answer": "Word or Thing"
+  },
+  {
+    "question": "אֱמֶת",
+    "answer": "Truth"
+  },
+  {
+    "question": "שָׂפָה",
+    "answer": "Language or Lip"
+  },
+  {
+    "question": "לֵב",
+    "answer": "Heart"
+  },
+  {
+    "question": "יָד",
+    "answer": "Hand"
+  },
+  {
+    "question": "רֹאשׁ",
+    "answer": "Head"
+  },
+  {
+    "question": "פֶּה",
+    "answer": "Mouth"
+  },
+  {
+    "question": "עַיִן",
+    "answer": "Eye"
+  },
+  {
+    "question": "אֹזֶן",
+    "answer": "Ear"
+  },
+  {
+    "question": "רֶגֶל",
+    "answer": "Foot"
+  },
+  {
+    "question": "בַּיִת",
+    "answer": "House"
+  },
+  {
+    "question": "שַׁבָּת",
+    "answer": "Sabbath"
+  },
+  {
+    "question": "חֹדֶשׁ",
+    "answer": "Month or New Moon"
+  },
+  {
+    "question": "שָׁנָה",
+    "answer": "Year"
+  },
+  {
+    "question": "יוֹם",
+    "answer": "Day"
+  },
+  {
+    "question": "לַיְלָה",
+    "answer": "Night"
+  },
+  {
+    "question": "כּוֹכָב",
+    "answer": "Star"
+  },
+  {
+    "question": "יָרֵחַ",
+    "answer": "Moon"
+  },
+  {
+    "question": "שֶׁמֶשׁ",
+    "answer": "Sun"
+  },
+  {
+    "question": "עֵץ",
+    "answer": "Tree"
+  },
+  {
+    "question": "פֶּרִי",
+    "answer": "Fruit"
+  },
+  {
+    "question": "צֹאן",
+    "answer": "Sheep or Flock"
+  },
+  {
+    "question": "בָּקָר",
+    "answer": "Cattle"
+  },
+  {
+    "question": "דָּג",
+    "answer": "Fish"
+  },
+  {
+    "question": "צִפּוֹר",
+    "answer": "Bird"
+  },
+  {
+    "question": "נֶפֶשׁ",
+    "answer": "Soul or Life"
+  },
+  {
+    "question": "גּוּף",
+    "answer": "Body"
+  },
+  {
+    "question": "דָּם",
+    "answer": "Blood"
+  },
+  {
+    "question": "עָפָר",
+    "answer": "Dust"
+  },
+  {
+    "question": "אֵשׁ",
+    "answer": "Fire"
+  },
+  {
+    "question": "רוּחַ",
+    "answer": "Wind or Spirit"
+  },
+  {
+    "question": "מָוֶת",
+    "answer": "Death"
+  },
+  {
+    "question": "חַי",
+    "answer": "Alive"
+  },
+  {
+    "question": "מִלְחָמָה",
+    "answer": "War"
+  },
+  {
+    "question": "שָׁלָל",
+    "answer": "Plunder or Spoils"
+  },
+  {
+    "question": "גָּלוּת",
+    "answer": "Exile"
+  },
+  {
+    "question": "גְּאֻלָּה",
+    "answer": "Redemption"
+  },
+  {
+    "question": "תְּשׁוּבָה",
+    "answer": "Repentance"
+  },
+  {
+    "question": "נֵס",
+    "answer": "Miracle"
+  },
+  {
+    "question": "גִּבּוֹר",
+    "answer": "Hero or Mighty"
+  },
+  {
+    "question": "צָבָא",
+    "answer": "Army or Host"
+  },
+  {
+    "question": "מַלְאָךְ",
+    "answer": "Angel or Messenger"
+  },
+  {
+    "question": "שָׂטָן",
+    "answer": "Satan or Adversary"
+  },
+  {
+    "question": "גֵּיהִנּוֹם",
+    "answer": "Gehenna or Hell"
+  },
+  {
+    "question": "גַּן עֵדֶן",
+    "answer": "Garden of Eden"
+  },
+  {
+    "question": "תְּהוֹם",
+    "answer": "Deep or Abyss"
+  },
+  {
+    "question": "רָעָב",
+    "answer": "Famine"
+  },
+  {
+    "question": "שָׂבָע",
+    "answer": "Plenty or Satisfaction"
+  },
+  {
+    "question": "חֹסֶר",
+    "answer": "Lack or Need"
+  },
+  {
+    "question": "עֹשֶׁר",
+    "answer": "Wealth"
+  },
+  {
+    "question": "עָנִי",
+    "answer": "Poor"
+  },
+  {
+    "question": "עָשִׁיר",
+    "answer": "Rich"
+  },
+  {
+    "question": "יָרֵא",
+    "answer": "Fear or Afraid"
+  },
+  {
+    "question": "שָׂמֵחַ",
+    "answer": "Happy or Joyful"
+  },
+  {
+    "question": "עָצוּב",
+    "answer": "Sad"
+  },
+  {
+    "question": "אָב",
+    "answer": "Father"
+  },
+  {
+    "question": "אֵם",
+    "answer": "Mother"
+  },
+  {
+    "question": "בֵּן",
+    "answer": "Son"
+  },
+  {
+    "question": "בַּת",
+    "answer": "Daughter"
+  },
+  {
+    "question": "אָח",
+    "answer": "Brother"
+  },
+  {
+    "question": "אָחוֹת",
+    "answer": "Sister"
+  },
+  {
+    "question": "מִשְׁפָּחָה",
+    "answer": "Family"
+  },
+  {
+    "question": "חָבֵר",
+    "answer": "Friend"
+  },
+  {
+    "question": "אוֹיֵב",
+    "answer": "Enemy"
+  },
+  {
+    "question": "שָׂנֵא",
+    "answer": "Hate"
+  },
+  {
+    "question": "אָהַב",
+    "answer": "Love"
+  },
+  {
+    "question": "רָצָה",
+    "answer": "Want or Desire"
+  },
+  {
+    "question": "בָּחַר",
+    "answer": "Choose"
+  },
+  {
+    "question": "עָשָׂה",
+    "answer": "Do or Make"
+  },
+  {
+    "question": "יָצַר",
+    "answer": "Create or Form"
+  },
+  {
+    "question": "בָּרָא",
+    "answer": "Create"
+  },
+  {
+    "question": "שָׁמַר",
+    "answer": "Keep or Guard"
+  },
+  {
+    "question": "זָכַר",
+    "answer": "Remember"
+  },
+  {
+    "question": "שָׁכַח",
+    "answer": "Forget"
+  },
+  {
+    "question": "דִּבֵּר",
+    "answer": "Speak"
+  },
+  {
+    "question": "שָׁמַע",
+    "answer": "Hear"
+  },
+  {
+    "question": "רָאָה",
+    "answer": "See"
+  },
+  {
+    "question": "יָדַע",
+    "answer": "Know"
+  },
+  {
+    "question": "חָשַׁב",
+    "answer": "Think"
+  },
+  {
+    "question": "הָלַךְ",
+    "answer": "Walk or Go"
+  },
+  {
+    "question": "בָּא",
+    "answer": "Come"
+  },
+  {
+    "question": "יָשַׁב",
+    "answer": "Sit or Dwell"
+  },
+  {
+    "question": "קָם",
+    "answer": "Rise or Stand"
+  },
+  {
+    "question": "שָׁכַב",
+    "answer": "Lie Down"
+  },
+  {
+    "question": "נָפַל",
+    "answer": "Fall"
+  },
+  {
+    "question": "עָלָה",
+    "answer": "Go Up or Ascend"
+  },
+  {
+    "question": "יָרַד",
+    "answer": "Go Down or Descend"
+  },
+  {
+    "question": "פָּתַח",
+    "answer": "Open"
+  },
+  {
+    "question": "סָגַר",
+    "answer": "Close"
+  },
+  {
+    "question": "נָתַן",
+    "answer": "Give"
+  },
+  {
+    "question": "לָקַח",
+    "answer": "Take"
+  },
+  {
+    "question": "שָׁלַח",
+    "answer": "Send"
+  },
+  {
+    "question": "קָרָא",
+    "answer": "Call or Read"
+  },
+  {
+    "question": "כָּתַב",
+    "answer": "Write"
+  },
+  {
+    "question": "קָרַב",
+    "answer": "Approach or Draw Near"
+  },
+  {
+    "question": "רָחַק",
+    "answer": "Far or Distant"
+  },
+  {
+    "question": "גָּדַל",
+    "answer": "Grow or Become Great"
+  },
+  {
+    "question": "קָטַן",
+    "answer": "Small or Become Small"
+  },
+  {
+    "question": "חָזַק",
+    "answer": "Strong or Strengthen"
+  },
+  {
+    "question": "חָלַשׁ",
+    "answer": "Weak or Weaken"
+  },
+  {
+    "question": "יָשַׁר",
+    "answer": "Straight or Upright"
+  },
+  {
+    "question": "עָקֹב",
+    "answer": "Crooked"
+  },
+  {
+    "question": "טוֹב",
+    "answer": "Good"
+  },
+  {
+    "question": "רַע",
+    "answer": "Evil or Bad"
+  },
+  {
+    "question": "חָדָשׁ",
+    "answer": "New"
+  },
+  {
+    "question": "יָשָׁן",
+    "answer": "Old"
+  },
+  {
+    "question": "צַדִּיק",
+    "answer": "Righteous"
+  },
+  {
+    "question": "רָשָׁע",
+    "answer": "Wicked"
+  },
+  {
+    "question": "חָכָם",
+    "answer": "Wise"
+  },
+  {
+    "question": "כְּסִיל",
+    "answer": "Fool"
+  },
+  {
+    "question": "עָנָו",
+    "answer": "Humble"
+  },
+  {
+    "question": "גֵּאֶה",
+    "answer": "Proud"
+  },
+  {
+    "question": "צָנוּעַ",
+    "answer": "Modest"
+  },
+  {
+    "question": "פֶּתִי",
+    "answer": "Simple or Naive"
+  },
+  {
+    "question": "עָרוּם",
+    "answer": "Cunning or Shrewd"
+  },
+  {
+    "question": "נָבוֹן",
+    "answer": "Understanding"
+  },
+  {
+    "question": "שָׁקֵט",
+    "answer": "Quiet or Peaceful"
+  },
+  {
+    "question": "סוֹעֵר",
+    "answer": "Stormy or Turbulent"
+  },
+  {
+    "question": "צַח",
+    "answer": "Clear or Pure"
+  },
+  {
+    "question": "עָכוּר",
+    "answer": "Troubled or Muddy"
+  },
+  {
+    "question": "חָם",
+    "answer": "Hot"
+  },
+  {
+    "question": "קַר",
+    "answer": "Cold"
+  },
+  {
+    "question": "יָבֵשׁ",
+    "answer": "Dry"
+  },
+  {
+    "question": "לַח",
+    "answer": "Wet"
+  },
+  {
+    "question": "מָלֵא",
+    "answer": "Full"
+  },
+  {
+    "question": "רֵיק",
+    "answer": "Empty"
+  },
+  {
+    "question": "כָּבֵד",
+    "answer": "Heavy"
+  },
+  {
+    "question": "קַל",
+    "answer": "Light"
+  },
+  {
+    "question": "חָפְשִׁי",
+    "answer": "Free"
+  },
+  {
+    "question": "עָבֵד",
+    "answer": "Slave or Servant"
+  },
+  {
+    "question": "אָדוֹן",
+    "answer": "Master or Lord"
+  },
+  {
+    "question": "מֶלֶךְ",
+    "answer": "King"
+  },
+  {
+    "question": "מַלְכָּה",
+    "answer": "Queen"
+  },
+  {
+    "question": "נָשִׂיא",
+    "answer": "Prince or Leader"
+  },
+  {
+    "question": "שָׂר",
+    "answer": "Minister or Official"
+  },
+  {
+    "question": "כֹּהֵן",
+    "answer": "Priest"
+  },
+  {
+    "question": "נָבִיא",
+    "answer": "Prophet"
+  },
+  {
+    "question": "חָכָם",
+    "answer": "Wise Man"
+  },
+  {
+    "question": "חָזוֹן",
+    "answer": "Vision"
+  },
+  {
+    "question": "חֲלוֹם",
+    "answer": "Dream"
+  },
+  {
+    "question": "מַחֲשָׁבָה",
+    "answer": "Thought"
+  },
+  {
+    "question": "רָצוֹן",
+    "answer": "Will or Desire"
+  },
+  {
+    "question": "יֵצֶר",
+    "answer": "Inclination or Desire"
+  },
+  {
+    "question": "מִלָּה",
+    "answer": "Word"
+  },
+  {
+    "question": "סֵפֶר",
+    "answer": "Book"
+  },
+  {
+    "question": "כְּתָב",
+    "answer": "Writing"
+  },
+  {
+    "question": "מִקְרָא",
+    "answer": "Scripture"
+  },
+  {
+    "question": "תַּנַ\"ךְ",
+    "answer": "Tanakh (Hebrew Bible)"
+  },
+  {
+    "question": "מִשְׁנָה",
+    "answer": "Mishnah"
+  },
+  {
+    "question": "תַּלְמוּד",
+    "answer": "Talmud"
+  },
+  {
+    "question": "מִדְרָשׁ",
+    "answer": "Midrash"
+  },
+  {
+    "question": "הֲלָכָה",
+    "answer": "Halakha (Jewish Law)"
+  },
+  {
+    "question": "אַגָּדָה",
+    "answer": "Aggadah (Narrative)"
+  },
+  {
+    "question": "קַבָּלָה",
+    "answer": "Kabbalah (Mysticism)"
+  },
+  {
+    "question": "צִיּוֹן",
+    "answer": "Zion"
+  },
+  {
+    "question": "יִשְׂרָאֵל",
+    "answer": "Israel"
+  },
+  {
+    "question": "יְהוּדִי",
+    "answer": "Jewish"
+  },
+  {
+    "question": "גּוֹי",
+    "answer": "Nation or Gentile"
+  },
+  {
+    "question": "עִבְרִי",
+    "answer": "Hebrew"
+  },
+  {
+    "question": "שִׁבְטִי",
+    "answer": "Tribal"
+  },
+  {
+    "question": "לֵוִי",
+    "answer": "Levite"
+  },
+  {
+    "question": "כֹּהֵן",
+    "answer": "Priest"
+  },
+  {
+    "question": "נָשִׂיא",
+    "answer": "Prince or Leader"
+  },
+  {
+    "question": "שָׂר",
+    "answer": "Minister or Official"
+  },
+  {
+    "question": "מֶלֶךְ",
+    "answer": "King"
+  },
+  {
+    "question": "מַלְכָּה",
+    "answer": "Queen"
+  },
+  {
+    "question": "נָבִיא",
+    "answer": "Prophet"
+  },
+  {
+    "question": "חָכָם",
+    "answer": "Wise Man"
+  },
+  {
+    "question": "חָזוֹן",
+    "answer": "Vision"
+  },
+  {
+    "question": "חֲלוֹם",
+    "answer": "Dream"
+  },
+  {
+    "question": "מַחֲשָׁבָה",
+    "answer": "Thought"
+  },
+  {
+    "question": "רָצוֹן",
+    "answer": "Will or Desire"
+  },
+  {
+    "question": "יֵצֶר",
+    "answer": "Inclination or Desire"
+  },
+  {
+    "question": "מִלָּה",
+    "answer": "Word"
+  },
+  {
+    "question": "סֵפֶר",
+    "answer": "Book"
+  },
+  {
+    "question": "כְּתָב",
+    "answer": "Writing"
+  },
+  {
+    "question": "מִקְרָא",
+    "answer": "Scripture"
+  },
+  {
+    "question": "תַּנַ\"ךְ",
+    "answer": "Tanakh (Hebrew Bible)"
+  },
+  {
+    "question": "מִשְׁנָה",
+    "answer": "Mishnah"
+  },
+  {
+    "question": "תַּלְמוּד",
+    "answer": "Talmud"
+  },
+  {
+    "question": "מִדְרָשׁ",
+    "answer": "Midrash"
+  },
+  {
+    "question": "הֲלָכָה",
+    "answer": "Halakha (Jewish Law)"
+  },
+  {
+    "question": "אַגָּדָה",
+    "answer": "Aggadah (Narrative)"
+  },
+  {
+    "question": "קַבָּלָה",
+    "answer": "Kabbalah (Mysticism)"
+  },
+  {
+    "question": "צִיּוֹן",
+    "answer": "Zion"
+  },
+  {
+    "question": "יִשְׂרָאֵל",
+    "answer": "Israel"
+  },
+  {
+    "question": "יְהוּדִי",
+    "answer": "Jewish"
+  },
+  {
+    "question": "גּוֹי",
+    "answer": "Nation or Gentile"
+  },
+  {
+    "question": "עִבְרִי",
+    "answer": "Hebrew"
+  }
+]
