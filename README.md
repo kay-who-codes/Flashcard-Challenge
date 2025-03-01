@@ -1,4 +1,4 @@
-# Flashcards App
+# 🃏 Flashcards
 
 An interactive flashcards application designed to help users learn and retain information efficiently through self-paced study sessions.
 
