@@ -2,7 +2,7 @@
 
 A simple flashcards app designed to help users learn and retain information efficiently through self-paced study sessions.
 
-[![App Image](Non-App/App%20Image.png)](https://kay-who-codes.github.io/Flashcards)
+[![App Image](Non-App/App%20Image.png)](https://kay-who-codes.github.io/Flashcard-Challenge)
 
 ## Features
 
@@ -15,7 +15,7 @@ A simple flashcards app designed to help users learn and retain information effi
 
 ## Usage
 
-1. Open the app in a browser - **[Flashcards App](https://kay-who-codes.github.io/Flashcards)**.
+1. Open the app in a browser - **[Flashcards App](https://kay-who-codes.github.io/Flashcard-Challenge)**.
 2. Choose a flashcard category from the dropdown menu.
 3. Enter the number of flashcards you wish to study.
 4. Click the **Start Learning** button to begin.
