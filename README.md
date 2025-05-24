@@ -1,4 +1,4 @@
-# 🃏 Flashcards
+# 🃏 Flashcard Challenge
 
 A simple flashcards app designed to help users learn and retain information efficiently through self-paced study sessions.
 
